@@ -1,0 +1,22 @@
+/* Custom animations */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom transitions */
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/* Custom components */
+.avatar-preview-container {
+    aspect-ratio: 16/9;
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+}
